@@ -92,3 +92,11 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+#sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
