@@ -22,63 +22,36 @@
     </nav>
     </div>
     <br>
-    <div id="tt">
-    <div class="slideshow-container">
-            <div>
-                    <h1 class="text-center">WEBSITE GAME GIẢI TRÍ</h1>
+    <div class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h1 class="text-center">GAMES</h1>
+                <p class="text-center">Các trò chơi dành cho người trên 12 tuổi. Chơi quá 180 phút mỗi ngày sẽ gây hại cho sức khỏe.</p>
+            </div>
+            <br>
+            <div class="row projects">
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="image/avt.jpg">
+                    <h3 class="name">
+                        <a href="#">Avatar</a>
+                    </h3>
+                    <p class="description"><br>Bạn muốn là công dân của thành phố ảo Avatar, bạn sẽ là chính bạn trong thế giới thực hay bạn là ai đó bạn mong muốn<br><br></p>
                 </div>
-                <br>
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fad">
-            <div class="numbertext">1 / 6</div>
-            <img src="image/banner-Team.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="image/ninja.png">
+                    <h3 class="name"><a href="#">Ninja School</a></h3>
+                    <p class="description"><br>Bạn là fan của Ninja, nhân vật anh hùng nửa chánh nửa tà, hành tung bí ẩn nhưng lại có các khả năng phi<br><br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="image/mobi.jpg">
+                    <h3 class="name">
+                            <a href="#">Mobi Army</a></h3>
+                    <p class="description"><br>Năm 2014 tình hình thế giới diễn biến phức tạp, thế chiến thứ 3 có thể bùng nổ bất cứ lúc nào. Một lực lượng vũ trang<br><br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="image/kpah.jpg">
+                    <h3 class="name"><a href="#">Khí Phách Anh Hùng</a></h3>
+                    <p class="description"><br>Khí Phách Anh Hùng là trò chơi nhập vai cổ trang đầu tiên trên điện thoại di động tại Việt Nam, với số lượng người tham<br><br></p>
+                </div>
             </div>
-        
-            <div class="mySlides fad">
-            <div class="numbertext">2 / 6</div>
-            <img src="image/banner-Avatar.png" style="width:100%">
-            <div class="text">Caption Two</div>
-            </div>
-        
-            <div class="mySlides fad">
-            <div class="numbertext">3 / 6</div>
-            <img src="image/nj.png" style="width:100%">
-            <div class="text">Caption Three</div>
-            </div>
-        
-            <div class="mySlides fad">
-                <div class="numbertext">4 / 6</div>
-                <img src="image/banner-Knight.jpg" style="width:100%">
-                <div class="text">Caption four</div>
-            </div>
-
-            <div class="mySlides fad">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="image/banner-Army3.png" style="width:100%">
-                    <div class="text">Caption five</div>
-            </div>
-
-            <div class="mySlides fad">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="image/banner_OnePiece.jpg" style="width:100%">
-                    <div class="text">Caption six</div>
-            </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-        </div>
+    </div>
     <div class="footer-basic">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
