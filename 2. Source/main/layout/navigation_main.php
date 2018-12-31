@@ -16,8 +16,8 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <?php
-                    include_once "../config/core.php";
-                    include_once "../login_checker.php";
+                    include_once "config/core.php";
+                    include_once "login_checker.php";
                     $access_denied = false; 
                 ?>
                 <div class="login-me" >
@@ -26,7 +26,7 @@
                 // if user was logged in, show "Edit Profile", "Orders" and "Logout" options
                 if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true && $_SESSION['access_level']=='Customer'){
                     ?>
-                    <a class="btn btn-light action-button" style="color:white;" href="../index.php"><?php echo $_SESSION['firstname']; ?></button></a>
+                    <a class="btn btn-light action-button" style="color:white;" href="index_customer.php"><?php echo $_SESSION['firstname']; ?></button></a>
                     </a>
                     <?php
                         }       
@@ -34,8 +34,8 @@
                     else{
                     ?>
                     <div >
-                    <a href="../index.php" style="color:white;">Login</a>
-                    <a href="../register.php" style="color:white;" >Register</a>
+                    <a href="index_customer.php" style="color:white;">Login</a>
+                    <a href="register.php" style="color:white;" >Register</a>
                     </div>
                     <?php
                         }

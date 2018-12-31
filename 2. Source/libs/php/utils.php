@@ -28,7 +28,7 @@ class Utils{
     public function sendEmailViaPhpMail($send_to_email, $subject, $body){
     
         $from_name="WEB GAME";
-        $from_email="vubacong98@gmail.com";
+        $from_email="kiemtien1305@gmail.com";
     
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";

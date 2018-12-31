@@ -12,14 +12,14 @@
             </button>
  
             <!-- Change "Your Site" to your site name -->
-            <a class="navbar-brand" href="main/index.php">Your Site</a>
+            <a class="navbar-brand" href="index.php">Home</a>
         </div>
  
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <!-- link to the "Cart" page, highlight if current page is cart.php -->
                 <li <?php echo $page_title=="Index" ? "class='active'" : ""; ?>>
-                    <a href="<?php echo $home_url; ?>">Home</a>
+                    <a href="index_customer.php">Your Site</a>
                 </li>
             </ul>
  

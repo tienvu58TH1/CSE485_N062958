@@ -37,7 +37,7 @@ echo "<div class='col-md-12'>";
         // check if email already exists
         if($user->emailExists()){
             echo "<div class='alert alert-danger'>";
-                echo "The email you specified is already registered. Please try again or <a href='{$home_url}login'>login.</a>";
+                echo "The email you specified is already registered. Please try again or <a href='{$home_url}login.php'>login.</a>";
             echo "</div>";
         }
     
@@ -50,17 +50,18 @@ echo "<div class='col-md-12'>";
             $user->address=$_POST['address'];
             $user->password=$_POST['password'];
             $user->access_level='Customer';
-            $user->status=1;
             // access code for email verification
             $access_code=$utils->getToken();
             $user->access_code=$access_code;
+            $user->status=0;
+
             // create the user
             if($user->create()){
             
                 // send confimation email
                 $send_to_email=$_POST['email'];
                 $body="Hi {$send_to_email}.<br /><br />";
-                $body.="Please click the following link to verify your email and login: {$home_url}verify/?access_code={$access_code}";
+                $body.="Please click the following link to verify your email and login: {$home_url}verify.php/?access_code={$access_code}";
                 $subject="Verification Email";
             
                 if($utils->sendEmailViaPhpMail($send_to_email, $subject, $body)){

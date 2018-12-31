@@ -1,43 +1,69 @@
 <?php
-// core configuration
-include_once "config/core.php";
- 
-// set page title
-$page_title="Index";
- 
-// include login checker
-$require_login=true;
-include_once "login_checker.php";
- 
-// include page header HTML
-include_once 'layout/layout_head.php';
- 
-echo "<div class='col-md-12'>";
- 
-    // to prevent undefined index notice
-    $action = isset($_GET['action']) ? $_GET['action'] : "";
- 
-    // if login was successful
-    if($action=='login_success'){
-        echo "<div class='alert alert-info'>";
-            echo "<strong>Hi " . $_SESSION['firstname'] . ", welcome back!</strong>";
-        echo "</div>";
-    }
- 
-    // if user is already logged in, shown when user tries to access the login page
-    else if($action=='already_logged_in'){
-        echo "<div class='alert alert-info'>";
-            echo "<strong>You are already logged in.</strong>";
-        echo "</div>";
-    }
- 
-    // content once logged in
-    echo "<div class='alert alert-info'>";
-        echo "Content when logged in will be here. For example, your premium products or services.";
-    echo "</div>";
- 
-echo "</div>";
- 
-// footer HTML and JavaScript codes
-include 'layout/layout_foot.php';
+include_once "main/layout/head.php"
+?>
+    <div class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">WEBSITE GAME GIẢI TRÍ</h2>
+                <p class="text-center">Tổng hợp những game nhẹ nhàng không cần cày kéo quá mệt mỏi phù hợp cho game thủ giải trí&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fad">
+            <div class="numbertext">1 / 6</div>
+            <img src="main/assets/img/banner-Team.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fad">
+            <div class="numbertext">2 / 6</div>
+            <img src="main/assets/img/banner-Avatar.png" style="width:100%">
+            <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fad">
+            <div class="numbertext">3 / 6</div>
+            <img src="main/assets/img/nj.png" style="width:100%">
+            <div class="text">Caption Three</div>
+            </div>
+        
+            <div class="mySlides fad">
+                <div class="numbertext">4 / 6</div>
+                <img src="main/assets/img/banner-Knight.jpg" style="width:100%">
+                <div class="text">Caption four</div>
+            </div>
+
+            <div class="mySlides fad">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="main/assets/img/banner-Army3.png" style="width:100%">
+                    <div class="text">Caption five</div>
+            </div>
+
+            <div class="mySlides fad">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="main/assets/img/banner_OnePiece.jpg" style="width:100%">
+                    <div class="text">Caption six</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+<?php
+    include "main/layout/foot.php";
 ?>
