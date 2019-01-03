@@ -10,9 +10,8 @@
                 </button>
     
                 <!-- Change "Your Site" to your site name -->
-                <a class="navbar-brand" href="<?php echo $home_url; ?>">TRANG CHỦ</a>
-                <a class="navbar-brand" href="<?php echo $home_url; ?>">GAMES</a>
-                <a class="navbar-brand" href="<?php echo $home_url; ?>">TIỆN ÍCH</a>
+                <a class="navbar-brand" href="index.php">TRANG CHỦ</a>
+                <a class="navbar-brand" href="read_games.php">GAMES</a>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <?php

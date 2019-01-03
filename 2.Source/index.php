@@ -1,5 +1,5 @@
 <?php
-include_once "main/layout/head.php"
+include_once "main/layout/head.php";
 ?>
     <div class="projects-clean">
         <div class="container">

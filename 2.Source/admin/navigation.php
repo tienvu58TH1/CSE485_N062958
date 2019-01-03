@@ -33,7 +33,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <img src="../images/fm2.jpg" style="width: 20px;height:20px;" alt="icon">
                         &nbsp;&nbsp;<?php echo $_SESSION['firstname']; ?>
                         &nbsp;&nbsp;<span class="caret"></span>
                     </a>

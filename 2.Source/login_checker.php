@@ -1,7 +1,6 @@
 <?php
 // login checker for 'customer' access level
  
-// if access level was not 'Admin', redirect him to login page/nếu cấp truy cập không phải là 'Quản trị viên', hãy chuyển hướng anh ấy đến trang đăng nhập
 if(isset($_SESSION['access_level']) && $_SESSION['access_level']=="Admin"){
     header("Location: {$home_url}admin/index.php?action=logged_in_as_admin");
 }

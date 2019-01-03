@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li <?php echo $page_title=="Edit Profile" ? "class='active'" : ""; ?>>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <img src="images/fm2.jpg" style="width: 20px;height:20px;" alt="icon">
                             &nbsp;&nbsp;<?php echo $_SESSION['firstname']; ?>
                             &nbsp;&nbsp;<span class="caret"></span>
                         </a>
@@ -51,13 +51,13 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li <?php echo $page_title=="Login" ? "class='active'" : ""; ?>>
                         <a href="<?php echo $home_url; ?>login">
-                            <span class="glyphicon glyphicon-log-in"></span> Log In
+                        Log In
                         </a>
                     </li>
                 
                     <li <?php echo $page_title=="Register" ? "class='active'" : ""; ?>>
                         <a href="<?php echo $home_url; ?>register">
-                            <span class="glyphicon glyphicon-check"></span> Register
+                        Register
                         </a>
                     </li>
                 </ul>
