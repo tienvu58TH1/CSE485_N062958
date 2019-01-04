@@ -56,3 +56,6 @@ function showSlides() {
 //   slides[slideIndex-1].style.display = "block"; 
 //   dots[slideIndex-1].className += " active";
 // }
+$('#exampleModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
