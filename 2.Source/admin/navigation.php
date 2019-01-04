@@ -25,7 +25,7 @@
                 </li>
                 <li <?php
                         echo $page_title=="Security" ? "class='active'" : ""; ?> >
-                    <a href="<?php echo $home_url; ?>admin/securiry.php">Security</a>
+                    <a href="<?php echo $home_url; ?>admin/read_games.php">Games</a>
                 </li>
             </ul>
  

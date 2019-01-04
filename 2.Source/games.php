@@ -22,7 +22,7 @@ include_once "main/layout/head.php";
 ?>
 <div class="jumbotron text-center">
   <h1>GAMES</h1>
-  <p>Game phù hợp cho những người trên 18 tuổi.</p> 
+  <p>Game phù hợp cho những người trên 12 tuổi.</p> 
 </div>
   
 <div class="container">
@@ -30,13 +30,15 @@ include_once "main/layout/head.php";
   <div class="row projects">
   <?php
         //kiểm tra
-        $result = $game->readAll();
+        $result = $game->read();
         if ($result) {
             while ($row = mysqli_fetch_array($result)) {
   ?>
-    <div class="col-lg-4 col-sm-6 item" style="border-style: outset;">
-      <img class="img-responsive" style="height:200px;" src="<?php echo $row['img'] ?>">
+    <div class="col-lg-4 col-sm-6 item" style="border-style: outset;height:350px;">
+    <a href="" style="text-decoration: none;">
+      <img class="img-responsive" style="height:200px;" src="<?php echo $row['images'] ?>">
       <h3 class="text-center"><?php echo $row['title'] ?></h3>
+    </a>
       <p class="description"><?php echo $row['content'] ?></p>
     </div>
             <?php }} ?> 

@@ -24,7 +24,7 @@ include_once "layout/layout_head.php";
  
 echo "<div class='col-sm-12'>";
  
-// check acess code will be here
+// check access code will be here
 // get given access code
 $access_code=isset($_GET['access_code']) ? $_GET['access_code'] : die("Access code not found.");
  
@@ -37,7 +37,6 @@ if(!$user->accessCodeExists()){
  
 else{
     // reset password form will be here
-    // post code will be here
     // if form was posted
     if($_POST){
     

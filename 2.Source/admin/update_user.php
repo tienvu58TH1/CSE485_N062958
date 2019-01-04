@@ -39,7 +39,6 @@ echo "<div class='col-md-12'>";
             $user->contact_number=$_POST['contact_number'];
             $user->address=$_POST['address'];
             $user->password=$_POST['password'];
-            $user->access_level=$_POST['access_level'];
             // access code for email verification
 
             // create the user
@@ -89,11 +88,6 @@ echo "<div class='col-md-12'>";
             <tr>
                 <td>Address</td>
                 <td><textarea name='address' class='form-control' required><?php echo isset($_POST['address']) ? htmlspecialchars($_POST['address'], ENT_QUOTES) : "";  ?></textarea></td>
-            </tr>
-
-            <tr>
-                <td>Access Level</td>
-                <td><input type='text' name='access_level' class='form-control' required value="<?php echo isset($_POST['access_level']) ? htmlspecialchars($_POST['access_level'], ENT_QUOTES) : "";  ?>" /></td>
             </tr>
     
             <tr>

@@ -16,9 +16,7 @@ include_once '../objects/user.php';
 include_once "layout_head.php";
  
 echo "<div class='col-md-12'>";
- 
-    // registration form HTML will be here
-    // code when form was submitted will be here
+
     // if form was posted
     if($_POST){
     
@@ -40,14 +38,13 @@ echo "<div class='col-md-12'>";
         }
     
         else{
-            // create user will be here
             // set values to object properties
             $user->firstname=$_POST['firstname'];
             $user->lastname=$_POST['lastname'];
             $user->contact_number=$_POST['contact_number'];
             $user->address=$_POST['address'];
             $user->password=$_POST['password'];
-            $user->access_level=$_POST['access_level'];
+            $user->access_level='Customer';
             // access code for email verification
             $user->status=1;
 
@@ -91,11 +88,6 @@ echo "<div class='col-md-12'>";
             <tr>
                 <td>Email</td>
                 <td><input type='email' name='email' class='form-control' required value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email'], ENT_QUOTES) : "";  ?>" /></td>
-            </tr>
-
-            <tr>
-                <td>Access Level</td>
-                <td><input type='text' name='access_level' class='form-control' required value="<?php echo isset($_POST['access_level']) ? htmlspecialchars($_POST['access_level'], ENT_QUOTES) : "";  ?>" /></td>
             </tr>
     
             <tr>

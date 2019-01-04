@@ -42,7 +42,7 @@ if($num>0){
     echo "</table>";
     
  
-    $page_url="read_users.php?";
+   // $page_url="read_users.php?";
     $total_rows = $user->countAll();
  
     // actual paging buttons/nút phân trang thực tế

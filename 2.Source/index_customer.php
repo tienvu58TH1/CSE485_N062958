@@ -3,7 +3,7 @@
 include_once "config/core.php";
  
 // set page title
-$page_title="Index";
+$page_title="Customer";
  
 // include login checker
 $require_login=true;
@@ -33,9 +33,9 @@ echo "<div class='col-md-12'>";
  
     // content once logged in
     echo "<div class='alert alert-info'>";
-        echo "Content when logged in will be here. For example, your premium products or services.";
+    echo "Content when logged in will be here. For example, your premium products or services.";
     echo "</div>";
- 
+
 echo "</div>";
  
 // footer HTML and JavaScript codes

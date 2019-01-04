@@ -53,7 +53,7 @@ echo "<div class='col-md-12'>";
             // access code for email verification
             $access_code=$utils->getToken();
             $user->access_code=$access_code;
-            $user->status=0;
+            $user->status=1;
 
             // create the user
             if($user->create()){

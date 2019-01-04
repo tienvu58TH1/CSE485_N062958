@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 02, 2019 lúc 09:02 PM
+-- Thời gian đã tạo: Th1 04, 2019 lúc 05:26 AM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.2.12
 
@@ -48,12 +48,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `contact_number`, `address`, `password`, `access_level`, `access_code`, `status`, `created`, `modified`) VALUES
-(26, 'cong', 'nguyen', 'hh@gmail.com', '55555555', 'kh', '$2y$10$sEmUcVvlMvNnJsSGhpIeKuP/ue1rqbcC8zMHua7FnIzSrNHT5OCBC', 'Customer', '', 1, '2019-01-03 00:11:24', '2019-01-02 16:11:24'),
+(1, 'manh', 'nguyen', 'tienvv62@wru.vn', '33333333', 'hn', '$2y$10$wVXEAqVuE4VZFlbg.MaPc.QadeeyntMk8pabbTF2DXTvHC5tJ4hDi', 'Admin', '', 1, '2019-01-03 03:31:54', '2019-01-04 04:16:32'),
 (27, 'ko', 'nguyen', 'kiem1305@gmail.com', '44425252', 'hk', '$2y$10$6h36qyz3SomDkwVZN3Eq4.kgRPO0Um2RbE2bovsSlcQ8BoEGXp8ym', 'Customer', '', 1, '2019-01-03 00:14:22', '2019-01-02 16:14:22'),
-(30, 'manh', 'nguyen', 'tienvv62@wru.vn', '33333333', 'hn', '$2y$10$wVXEAqVuE4VZFlbg.MaPc.QadeeyntMk8pabbTF2DXTvHC5tJ4hDi', 'Admin', '', 1, '2019-01-03 03:31:54', '2019-01-02 19:31:54'),
-(31, 'manh', 'vu', 'tt@wru.vn', '44425252', 'hd', '$2y$10$P6YVRqKOKjol0.sGsSCFMOCHWRUnx4Rq3sKdTGyR8k98MNpYXoHk2', 'Customer', '', 1, '2019-01-03 03:59:40', '2019-01-02 19:59:40'),
 (32, 'cong', 'nguyen', 'kiemt@gmail.com', '55555555', 'hh', '$2y$10$IA3/vp7RCkQnXH9/YNLCOedb/I8aco7Cjmqu7/xKUTK4pKsmzZd6a', 'Customer', '', 1, '2019-01-03 04:00:20', '2019-01-02 20:00:20'),
-(33, 'ko', 'nguyen', 'kien@gmail.com', '55444411', 'hn', '$2y$10$onboODBN1918FJg3goXABOqOyhCuvP7hSx5aqEFFJLXE4xzIB5L.y', 'Customer', '', 1, '2019-01-03 04:00:55', '2019-01-02 20:00:55');
+(33, 'ko', 'nguyen', 'kien@gmail.com', '55444411', 'hn', '$2y$10$onboODBN1918FJg3goXABOqOyhCuvP7hSx5aqEFFJLXE4xzIB5L.y', 'Customer', '', 1, '2019-01-03 04:00:55', '2019-01-02 20:00:55'),
+(35, 'tien', 'nguyen', 'kiemtien1305@gmail.com', '33333333', 'hd', '$2y$10$nQcm32y90o2toJTSBdgUtuAjwrle4YFEECFH5MR7CrWa7j5ZcNOyG', 'Customer', 'XOTo1ziBsfMmleFvMXF61MzyXfEb9IU1', 1, '2019-01-03 14:24:05', '2019-01-04 04:10:06'),
+(40, 'phai', 'vu', 'phaivv@gmail.com', '351555', 'HN', '$2y$10$S8z62tqcEvtM7UHUCu5NZu0CNYiUfCSth9kZt8rOfdnRTY2AY5RIu', 'Customer', '', 1, '2019-01-04 12:17:16', '2019-01-04 04:17:16');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -73,7 +73,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

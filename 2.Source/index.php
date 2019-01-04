@@ -1,5 +1,6 @@
 <?php
 include_once "main/layout/head.php";
+$page_title = 'Home';
 ?>
     <div class="projects-clean">
         <div class="container">
